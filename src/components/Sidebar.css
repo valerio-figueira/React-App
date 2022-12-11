@@ -1,0 +1,26 @@
+h2.title{
+    color: #e6bd55;
+    padding: 1rem 0 0;
+    font-size: 1.9rem;
+}
+.sidebar article.post{
+    margin: .5rem 0;
+    padding: 0;
+    border-bottom: 1px solid gray;
+}
+
+.sidebar article.post .post-title{
+    padding: 1rem 0 .5rem 0;
+}
+
+.sidebar article.post .description{
+    color: #bcbcbc;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    padding: 0 0 1.3rem 0;
+}
+
+.sidebar{
+    background-color: #15152a;
+    color: white;
+}

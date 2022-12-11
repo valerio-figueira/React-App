@@ -1,0 +1,21 @@
+article.post .title{
+    color: slateblue;
+    margin: 0 0 1rem;
+    padding: 0;
+}
+
+article.post .picture{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+article.post .content{
+    color: gray;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+article.post .date{
+    color: #695acd73;
+    font-weight: 500;
+}

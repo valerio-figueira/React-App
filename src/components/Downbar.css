@@ -1,0 +1,36 @@
+.downbar{
+    display: flex;
+    overflow-x: scroll;
+}
+.downbar .downbar-post{
+    display: flex;
+    margin: 0 .5rem;
+    flex-shrink: 0;
+    width: 300px;
+}
+.downbar *{
+    padding: 0;
+}
+.downbar .downbar-post img{
+    height: 140px;
+}
+.downbar .downbar-post .id-post{
+    color: #b7b7b7;
+    font-size: 1.5rem;
+    margin-left: .3rem;
+}
+.downbar .downbar-post .description{
+    line-height: 1.3rem;
+}
+.downbar .downbar-post .box{
+    display: flex;
+    flex-direction: column;
+}
+
+.downbar .downbar-post a{
+    color: gray;
+    margin: .3rem;
+}
+.downbar .downbar-post a:hover{
+    color: slateblue;
+}
