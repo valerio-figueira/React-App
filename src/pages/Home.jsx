@@ -12,7 +12,7 @@ const override = {
   margin: "4rem auto",
 }
 
-const URL = 'http://localhost:8888/home-posts';
+const URL = 'https://resilient-kangaroo-970dc9.netlify.app/home-posts';
 
 function Home() {
   const posts = FetchAPI(URL);

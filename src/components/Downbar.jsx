@@ -14,7 +14,7 @@ const override = {
 
 
 function Downbar() {
-    const posts = FetchAPI('http://localhost:8888/aside-posts');
+    const posts = FetchAPI('https://resilient-kangaroo-970dc9.netlify.app/aside-posts');
 
   return (
     <aside className='downbar'>

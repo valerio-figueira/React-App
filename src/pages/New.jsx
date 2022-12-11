@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
       margin: "2rem auto",
     }
 
-const URL = 'http://localhost:8888/posts';
+const URL = 'https://resilient-kangaroo-970dc9.netlify.app/posts';
 
 
 const New = () => {

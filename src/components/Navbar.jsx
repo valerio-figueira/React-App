@@ -25,8 +25,8 @@ function Navbar() {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/New">New</NavLink>
           <NavLink to="/Popular">Popular</NavLink>
-          <NavLink to="Trending">Trending</NavLink>
-          <NavLink to="Categories">Categories</NavLink>
+          <NavLink to="/Trending">Trending</NavLink>
+          <NavLink to="/Categories">About</NavLink>
           <div className='close-btn' onClick={toggleMobile}>&times;</div>
         </nav>
         <button className='mobile-btn fa fa-bars' onClick={toggleMobile}></button>
