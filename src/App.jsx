@@ -16,7 +16,7 @@ import React from 'react';
     import New from './pages/New';
     import Popular from './pages/Popular';
     import Trending from './pages/Trending';
-    import Categories from './pages/Categories';
+    import About from './pages/About';
     import NotFound from './pages/NotFound';
     import Posts from './pages/Posts';
 
@@ -34,10 +34,11 @@ function App(){
                         <Route path='/New' element={<New />} />
                         <Route path='/Popular' element={<Popular />} />
                         <Route path='/Trending' element={<Trending />} />
-                        <Route path='/Categories' element={<Categories />} />
+                        <Route path='/About' element={<About />} />
                         <Route path='/Post/:id' element={<Posts />} />
-                        <Route path='/Post/aside/:id' element={<Posts />} />
-                        <Route path='/Post/home/:id' element={<Posts />} />
+                        <Route path='/Aside/Post/:id' element={<Posts />} />
+                        <Route path='/Home/Post/:id' element={<Posts />} />
+                        <Route path='/Popular/:id' element={<Posts />} />
                         <Route path='*' element={<NotFound />} />
                     </Routes>
                 </main>

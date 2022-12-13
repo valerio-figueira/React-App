@@ -1,0 +1,18 @@
+.Popular{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.Popular .post{
+    margin: 0 1rem 2rem;
+}
+.Popular .post img{
+    width: 100%;
+}
+.Popular .post .description{
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: .7rem;
+}
+.Popular .post .description:hover{
+    color: slateblue;
+}

@@ -1,16 +1,15 @@
 import React from 'react';
-import ClipLoader from 'react-spinners/ClipLoader';
 import { Link } from 'react-router-dom';
 
     // HOOKS
     import FetchAPI from '../hooks/FetchAPI';
 
     // CSS
-    import './New.css'
-    const override = {
-      display: "block",
-      margin: "2rem auto",
-    }
+    import './New.css';
+
+    // COMPONENTS
+    import LoadingShimmer from '../components/LoadingShimmer';
+
 
 const URL = 'https://resilient-kangaroo-970dc9.netlify.app/posts';
 
@@ -39,7 +38,7 @@ const New = () => {
           </article>
         ))
       ) : (
-        <ClipLoader color={"slateblue"} size={100} aria-label="Loading Spinner" data-testid="loader" cssOverride={override} />
+        <LoadingShimmer />
       )}
     </section>
   )

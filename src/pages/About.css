@@ -1,0 +1,11 @@
+.About .about-container .title{
+    color: slateblue;
+    margin: 0 0 1rem;
+}
+.About .about-container .description{
+    text-indent: 2rem;
+    font-size: 1.5rem;
+    color: #555;
+    margin: 1rem 0;
+    line-height: 2rem;
+}

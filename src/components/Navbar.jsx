@@ -16,7 +16,7 @@ function Navbar() {
   }
 
   return (
-    <header>
+    <header id='header'>
         <Link to='/'>
           <h1 className='title'>W.</h1>
         </Link>
@@ -26,7 +26,7 @@ function Navbar() {
           <NavLink to="/New">New</NavLink>
           <NavLink to="/Popular">Popular</NavLink>
           <NavLink to="/Trending">Trending</NavLink>
-          <NavLink to="/Categories">About</NavLink>
+          <NavLink to="/About">About</NavLink>
           <div className='close-btn' onClick={toggleMobile}>&times;</div>
         </nav>
         <button className='mobile-btn fa fa-bars' onClick={toggleMobile}></button>

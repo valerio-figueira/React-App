@@ -1,10 +1,14 @@
+*{
+    scroll-behavior: smooth;
+}
 .downbar{
     display: flex;
     overflow-x: scroll;
+    padding: .3rem 0;
 }
 .downbar .downbar-post{
     display: flex;
-    margin: 0 .5rem;
+    margin: 0;
     flex-shrink: 0;
     width: 300px;
 }
@@ -33,4 +37,36 @@
 }
 .downbar .downbar-post a:hover{
     color: slateblue;
+}
+
+
+/*SCROLL BUTTONS*/
+.downbar{
+    position: relative;
+}
+.downbar .leftButton, .downbar .rightButton{
+    position: sticky;
+    top: 0; bottom: 0;
+
+    padding: 0 1rem;
+    margin: .3rem -1.7rem;
+    font-size: 3.5rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    background: transparent;
+    color: transparent;
+    border: none;
+    transition: .3s;
+}
+.downbar .rightButton{
+    right: 0;
+}
+.downbar .leftButton{
+    left: 0;
+}
+.downbar:hover .leftButton, .downbar:hover .rightButton{
+    display: block;
+    color: #ffffffaf;
+    background: #000000b8;
+    transform: translateX(0);
 }

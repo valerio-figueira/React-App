@@ -1,16 +1,14 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-import ClipLoader from 'react-spinners/ClipLoader';
 
 // CUSTOM HOOK
 import FetchAPI from '../hooks/FetchAPI';
 
+// COMPONENTS
+import LoadingShimmer from '../components/LoadingShimmer';
+
 // CSS
 import './Posts.css';
-const override = {
-    display: "block",
-    margin: "2rem auto",
-}
 
 function Posts() {
     // useParams bring an object with all URL params
@@ -18,18 +16,22 @@ function Posts() {
     const postType = window.location.href;
     let path;
 
-    if(postType.match('aside')){
+    if(postType.match('Aside')){
         path = 'aside-posts';
     } else{
-        if(postType.match('home')){
-            path = 'home-posts'
+        if(postType.match('Home')){
+            path = 'home-posts';
         } else{
-            path = 'posts'
+            if(postType.match('Popular')){
+                path = 'popular';
+            } else{
+                path = 'posts';
+            }
         }
     }
 
     // Fetch post by id
-    const URL = `http://localhost:8888/${path}/${id}`
+    const URL = `https://resilient-kangaroo-970dc9.netlify.app/${path}/${id}`;
 
     // USE HOOK TO PULL DATA FROM THE SERVER
     const post = FetchAPI(URL);
@@ -52,7 +54,7 @@ function Posts() {
                 <p className='date'>{post.date}</p>
             </article>
         ) : (
-            <ClipLoader color={"slateblue"} size={100} aria-label="Loading Spinner" data-testid="loader" cssOverride={override} />
+            <LoadingShimmer />
         )}
     </>
   )
