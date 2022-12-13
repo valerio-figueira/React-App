@@ -1,0 +1,18 @@
+.Trending{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.Trending .post{
+    margin: 0 1rem 2rem;
+}
+.Trending .post img{
+    width: 100%;
+}
+.Trending .post .description{
+    font-size: 1.3rem;
+    color: #555;
+    margin-top: .7rem;
+}
+.Trending .post .description:hover{
+    color: slateblue;
+}
