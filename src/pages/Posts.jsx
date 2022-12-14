@@ -31,7 +31,7 @@ function Posts() {
     }
 
     // Fetch post by id
-    const URL = `https://resilient-kangaroo-970dc9.netlify.app/${path}/${id}`;
+    const URL = `https://aedifico.netlify.app/${path}/${id}`;
 
     // USE HOOK TO PULL DATA FROM THE SERVER
     const post = FetchAPI(URL);

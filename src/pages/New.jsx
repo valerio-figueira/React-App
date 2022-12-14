@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
     import LoadingShimmer from '../components/LoadingShimmer';
 
 
-const URL = 'https://resilient-kangaroo-970dc9.netlify.app/posts';
+const URL = 'https://aedifico.netlify.app/posts';
 
 
 const New = () => {

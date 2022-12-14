@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 
 function Downbar() {
-    const posts = FetchAPI('https://resilient-kangaroo-970dc9.netlify.app/aside-posts');
+    const posts = FetchAPI('https://aedifico.netlify.app/aside-posts');
 
     function listeningToClick(){
         document.querySelectorAll('.downbar-post a')

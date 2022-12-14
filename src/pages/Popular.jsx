@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
       // HOOKS
       import FetchAPI from '../hooks/FetchAPI';
 
-  const URL = "https://resilient-kangaroo-970dc9.netlify.app/popular";
+  const URL = "https://aedifico.netlify.app/popular";
 
 
 const Popular = () => {
