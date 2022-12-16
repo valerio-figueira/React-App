@@ -50,12 +50,16 @@ img:hover{
 article{
   animation-name: fadeIn;
   animation-duration: 1.5s;
+  transform: translateY(0);
+}
+article:hover{
+  transform: translateY(-.3rem);
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(2rem);
+    transform: translateY(3rem);
   } to {
     opacity: 1;
     transform: translateY(0);
