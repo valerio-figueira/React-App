@@ -49,9 +49,9 @@ function Posts() {
                 )}
 
                 {post.content.map((paragraph, i) => (
-                    <p className='content' key={i} >{paragraph}</p>
+                    <p className='paragraph' key={i} >{paragraph}</p>
                 ))}
-                <p className='date'>{post.date}</p>
+                <p className='date'>Published on {new Date(post.date).toLocaleDateString()}</p>
             </article>
         ) : (
             <LoadingShimmer />

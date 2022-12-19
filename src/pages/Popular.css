@@ -5,6 +5,9 @@
 .Popular .post{
     margin: 0 1rem 2rem;
 }
+.Popular .post:hover{
+    transform: translateY(-.3rem);
+}
 .Popular .post img{
     width: 100%;
 }

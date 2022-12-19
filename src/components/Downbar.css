@@ -4,11 +4,11 @@
 .downbar{
     display: flex;
     overflow-x: scroll;
-    padding: .3rem 0;
+    padding: 0;
 }
 .downbar .downbar-post{
     display: flex;
-    margin: 0;
+    margin: 0; padding: .5rem 0 0;
     flex-shrink: 0;
     width: 300px;
 }
@@ -33,7 +33,7 @@
 
 .downbar .downbar-post a{
     color: gray;
-    margin: .3rem;
+    margin: .3rem .3rem 0;
 }
 .downbar .downbar-post a:hover{
     color: slateblue;
@@ -47,9 +47,10 @@
 .downbar .leftButton, .downbar .rightButton{
     position: sticky;
     top: 0; bottom: 0;
+    z-index: 1000;
 
     padding: 0 1rem;
-    margin: .3rem -1.7rem;
+    margin: .7rem -1.7rem .2rem;
     font-size: 3.5rem;
     border-radius: .3rem;
     cursor: pointer;

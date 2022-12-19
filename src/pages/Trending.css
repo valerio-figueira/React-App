@@ -5,6 +5,9 @@
 .Trending .post{
     margin: 0 1rem 2rem;
 }
+.Trending .post:hover{
+    transform: translateY(-.3rem);
+}
 .Trending .post img{
     width: 100%;
 }

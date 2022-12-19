@@ -9,6 +9,9 @@ article.home-post{
     "title button";
     padding: 1.5rem 0;
 }
+article.home-post:hover{
+    transform: translateY(-.3rem);
+}
 article.home-post .title{
     grid-area: title;
     color: black;

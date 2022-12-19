@@ -4,6 +4,23 @@ html{
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: #d7d5e8;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: #9f97d3;
+}
+::-webkit-scrollbar-track{
+  background: #f0f0f0;
+}
+::-webkit-scrollbar-track:hover{
+  background: #e7e7e7;
+}
+
 *{
   font-family: "Ubuntu", sans-serif;
   box-sizing: border-box;
@@ -52,9 +69,9 @@ article{
   animation-duration: 1.5s;
   transform: translateY(0);
 }
-article:hover{
-  transform: translateY(-.3rem);
-}
+
+
+
 
 @keyframes fadeIn {
   from {
